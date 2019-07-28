@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg.jpg) no-repeat;
+}
+
+.box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+}
+
+#finish {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 70px;
+    font-weight: 700;
+    z-index: 999;
+}
+
+.title {
+    padding: 20px;
+    font-size: 36px;
+    color: deeppink
+}
+
+.pickPic-box {
+    position: relative;
+    height: 150px;
+}
+
+.level {
+    padding-top: 30px;
+}
+
+.pickPic-box #pic {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    width: 10%;
+    height: 20%;
+    border-radius: 8px;
+    padding-left: 20px;
+}
+
+.pickPic-box #source {
+    position: absolute;
+    top: 10px;
+    right: 30%;
+}
+
+#canvas {
+    border: 5px solid gray;
+    padding: 3px;
+}
+
+footer {
+    position: relative;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.bubble {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ddd;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 15px #999;
+    z-index: 999;
+}
+
+audio {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+}
+
+.sign {
+
+    width: 100%;
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+    color: #eee;
+}
+
+#audioBox {
+    position: absolute;
+    left: 70%;
+    top: 80%;
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 30%;
+    background-color: rgba(66, 66, 66, .3);
+    cursor: move;
+}
+.giveup {
+    position: absolute;
+    right: 13%;
+    top: 10%;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #666;
+    color: #eee;
+}

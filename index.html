@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./sliding.js"></script>
+    <title>拼图游戏嘻嘻</title>
+
+</head>
+
+<body>
+    <div class="box">
+        <button class="giveup" title='世上无难事,只要肯放弃'>放弃重来</button>
+        <!-- 完成后的恭喜文字 -->
+        <div id="finish" style="display:none">恭喜您!成功了!!</div>
+        <header>
+            <div class="title">
+                <h1>拼图游戏</h1>
+            </div>
+            <form action="" class="pickPic-box">
+                <select name="pic" id="pic">
+                                <option value="1" selected>麻豆豆</option>
+                                <option value="2">麻豆与朋友</option>
+                                <option value="3">猫咪问号</option>
+                                <option value="4">丧气猫</option>
+                            </select>
+                <div class="level">
+                    <label for="">容易</label>
+                    <input type="range" id="scale" value="3" min="3" max="5" step="1">
+                    <label for="">困难</label>
+                </div>
+                <img src="images/1.png" id="source" width="120px" height="120px">
+            </form>
+            <br>
+        </header>
+        <main>
+            <canvas id="canvas" width="480px" height="480px"></canvas>
+        </main>
+        <footer>
+            <button class="btn">提示</button>
+            <p class="bubble" style="display: none;">绕着圈点试试?</p>
+        </footer>
+        <!-- 音乐播放 -->
+        <div id="audioBox">
+            点我慢慢拖动
+            <audio controls="controls" id="bgAudio" loop="loop">
+                <source src="music/0000FF.mp3" type="audio/mpeg" />
+                    您的浏览器不支持播放声音
+            </audio>
+        </div>
+    </div>
+    <div class="sign">
+        <p>from littlebaltan© 2019-06-28　E-mail: 1505992542@qq.com</p>
+        <p>Hope to get your advice! &nbsp; :3</p>
+    </div>
+</body>
+
+</html>
